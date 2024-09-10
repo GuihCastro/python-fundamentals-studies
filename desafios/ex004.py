@@ -1,0 +1,12 @@
+value = input('Digite algo: ')
+
+print('O tipo primitivo do valor digitado é: {}'.format(type(value)))
+print('É um valor alfabético? {}'.format(value.isalpha()))
+print('É um valor numérico? {}'.format(value.isnumeric()))
+print('É alfanumérico? {}'.format(value.isalnum()))
+print('É da tabela ascii? {}'.format(value.isascii()))
+print('É um digito? {}'.format(value.isdigit()))
+print('É um valor decimal? {}'.format(value.isdecimal()))
+print('Está em caixa baixa? {}'.format(value.islower()))
+print('Está em caixa alta? {}'.format(value.isupper()))
+print('Está em formato de título (capitalizado)? {}'.format(value.istitle()))
