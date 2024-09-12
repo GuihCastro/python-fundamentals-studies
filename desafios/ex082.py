@@ -10,8 +10,7 @@ values = []
 even = []
 odd = []
 while True:
-    n = int(input('Digite um número: '))
-    values.append(n)
+    values.append(int(input('Digite um número: ')))
     proceed = str(input('Deseja continuar? [S/N]: ')).strip().lower()
     while proceed not in 'sn':
         proceed = str(input('Por favor, informe uma opção válida\nDeseja continuar? [S/N]: ')).strip().lower()
@@ -22,7 +21,7 @@ for v in values:
         even.append(v)
     else:
         odd.append(v)
-print('-=' * 25)
+print('-' * 50)
 print(f'A lista completa é: {values}')
 print(f'A lista de pares é: {even}')
 print(f'A lista de ímpares é: {odd}')

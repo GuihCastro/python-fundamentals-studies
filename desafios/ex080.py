@@ -24,4 +24,5 @@ for count in range(0, 5):
                 values.insert(i, n)
                 print(f'Adicionado na posição {i}...')
                 break
+print('-=' * 25)
 print(f'Os valores digitados, em ordem, foram: {values}')

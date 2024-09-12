@@ -11,8 +11,7 @@ print('=' * 50)
 values = []
 
 while True:
-    n = int(input('Digite um valor: '))
-    values.append(n)
+    values.append(int(input('Digite um valor: ')))
     print('Adicionado com sucesso...')
     proceed = str(input('Quer continuar? [S/N]: ')).strip().lower()
     while proceed not in 'sn':
