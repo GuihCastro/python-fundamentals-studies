@@ -7,15 +7,12 @@ print('=' * 50)
 
 matrix = [[], [], []]
 
-for c in range(0, 3):
-    matrix[0].append(int(input(f'Digite um valor para [0, {c}]: ')))
-for c in range(0, 3):
-    matrix[1].append(int(input(f'Digite um valor para [1, {c}]: ')))
-for c in range(0, 3):
-    matrix[2].append(int(input(f'Digite um valor para [2, {c}]: ')))
+for l in range(0, 3):
+    for c in range(0, 3):
+        matrix[l].append(int(input(f'Digite um valor para [{l}, {c}]: ')))
 
 print('-' * 50)
 
-print(f'''[ {matrix[0][0]} ] [ {matrix[0][1]} ] [ {matrix[0][2]} ]
-[ {matrix[1][0]} ] [ {matrix[1][1]} ] [ {matrix[1][2]} ]
-[ {matrix[2][0]} ] [ {matrix[2][1]} ] [ {matrix[2][2]} ]''')
+print(f'''[{matrix[0][0]:^6}] [{matrix[0][1]:^6}] [{matrix[0][2]:^6}]
+[{matrix[1][0]:^6}] [{matrix[1][1]:^6}] [{matrix[1][2]:^6}]
+[{matrix[2][0]:^6}] [{matrix[2][1]:^6}] [{matrix[2][2]:^6}]''')

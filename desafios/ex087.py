@@ -11,21 +11,12 @@ matrix = [[], [], []]
 even = []
 even_sum = third_column_sum = 0
 
-for c in range(0, 3):
-    n = int(input(f'Digite um valor para [0, {c}]: '))
-    matrix[0].append(n)
-    if n % 2 == 0:
-        even.append(n)
-for c in range(0, 3):
-    n = int(input(f'Digite um valor para [1, {c}]: '))
-    matrix[1].append(n)
-    if n % 2 == 0:
-        even.append(n)
-for c in range(0, 3):
-    n = int(input(f'Digite um valor para [2, {c}]: '))
-    matrix[2].append(n)
-    if n % 2 == 0:
-        even.append(n)
+for l in range(0, 3):
+    for c in range(0, 3):
+        n = (int(input(f'Digite um valor para [{l}, {c}]: ')))
+        matrix[l].append(n)
+        if n % 2 == 0:
+            even.append(n)
 
 for n in even:
     even_sum += n
@@ -34,9 +25,10 @@ third_column_sum += matrix[0][2] + matrix[1][2] + matrix[2][2]
 
 print('-' * 50)
 
-print(f'''[ {matrix[0][0]} ] [ {matrix[0][1]} ] [ {matrix[0][2]} ]
-[ {matrix[1][0]} ] [ {matrix[1][1]} ] [ {matrix[1][2]} ]
-[ {matrix[2][0]} ] [ {matrix[2][1]} ] [ {matrix[2][2]} ]''')
+for l in range(0, 3):
+    for c in range(0, 3):
+        print(f'[{matrix[l][c]:^5}]', end=' ')
+    print()
 
 print('-' * 50)
 
